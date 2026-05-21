@@ -106,5 +106,5 @@ Jun 2025
 
 ---
 ## Research Interests  
-• MultiModal Learning 
-• AI Agent
+- MultiModal Learning 
+- AI Agent
