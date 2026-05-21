@@ -4,7 +4,7 @@
 Shenzhen, China  
 
 I am currently an undergraduate student majoring in **Electronics and Computer Engineering** at **Shenzhen MSU-BIT University**.  
-My research focuses on **Artificial Intelligence, Computer Vision, Cloud Computing, and Intelligent Optimization**, with particular interests in **deep learning, reinforcement learning, and AI-driven systems for real-world engineering problems**.
+My research focuses on **Artificial Intelligence**, with particular interests in **AI Agent and MultiModal Learning and AI-driven systems for real-world engineering problems**.
 
 ---
 
@@ -106,7 +106,5 @@ Jun 2025
 
 ---
 ## Research Interests  
-
-• Medical Image Analysis and Computer Vision  
 • MultiModal Learning 
 • AI Agent
