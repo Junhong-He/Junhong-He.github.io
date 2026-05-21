@@ -17,8 +17,10 @@
 .top-section {
     position: relative;
     padding: 10rem 0;
-    background-position: center;
+    background-position: center top;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     height: 25rem;
 }
 
