@@ -16,12 +16,15 @@ My research focuses on **Artificial Intelligence, Computer Vision, Cloud Computi
 ---
 
 ## Education
+**Beijing Institute of Technology**  
+*Honours Master of Intelligence Science and Technology* 
+Sep 2026 – Jul 2029 
 
 **Shenzhen MSU-BIT University**  
 *Honours Bachelor of Electronics and Computer Engineering*  
 Sep 2022 – Jul 2026  
 
-- GPA: **3.92 / 4.0** (Top **5%**, 3rd out of 179 students)  
+- GPA: **3.93 / 4.0** (Top **5%**, 3rd out of 179 students)  
 - National Scholarship (2024–2025)  
 - Key Courses:  
   Engineering Mathematics, Probability & Statistics, Data Structures,  
@@ -105,5 +108,5 @@ Jun 2025
 ## Research Interests  
 
 • Medical Image Analysis and Computer Vision  
-• Optimization Algorithms 
+• MultiModal Learning 
 • AI Agent
