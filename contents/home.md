@@ -3,14 +3,14 @@
 **Junhong He (何俊宏)**  
 Shenzhen, China  
 
-I am currently an undergraduate student majoring in **Electronics and Computer Engineering** at **Shenzhen MSU-BIT University**.  
+I am currently an student majoring in **Intelligence Science and Technology** at **Beijing Institute of Technology**.  
 My research focuses on **Artificial Intelligence**, with particular interests in **AI Agent and MultiModal Learning and AI-driven systems for real-world engineering problems**.
 
 ---
 
 ## Contact
 
--  Email: <code>jh.he@smbu.edu.cn</code>  
+-  Email: <code>jh.he@bit.edu.cn</code>  
 -  Location: Shenzhen, China  
 
 ---
@@ -108,3 +108,4 @@ Jun 2025
 ## Research Interests  
 - MultiModal Learning 
 - AI Agent
+- World Model
