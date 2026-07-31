@@ -30,7 +30,7 @@ My research interests lie at the intersection of **Artificial Intelligence**, **
 
 - **[Fine-Grained 3D Reconstruction of Urban Building Façades via Window-Driven Semantic Parsing](#)**, **Junhong He**, et al., *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2025* — **Accepted** (Second Author) — SCI Journal Paper (Q1)
 
-- **[Dual-Objective Parallel Task Scheduling in Cloud Computing via PPO](#)**, **Junhong He**✱, et al., *IEEE CloudCom, 2025* — **Accepted** (Co-First Author) — CCF-A Journal Paper
+- **[Dual-Objective Parallel Task Scheduling in Cloud Computing via PPO](#)**, **Junhong He**✱, et al., *IEEE CloudCom, 2025* — **Accepted** (Co-First Author) — EI International Conference
 
 - **[Automated Vegetable Pricing and Replenishment Using MILP and Simulated Annealing](#)**, Junhong He, et al., *Proceedings of the Chinese Automation Congress (CAC 2025), IEEE* — **Accepted** (First Author) — EI International Conference
 
