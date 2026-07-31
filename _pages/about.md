@@ -38,8 +38,8 @@ My research interests lie at the intersection of **Artificial Intelligence**, **
 - *2024.10* National Scholarship (Top 2% of all undergraduates nationwide)
 - *2023-2026* First-Class Academic Scholarship, Shenzhen MSU-BIT University
 - *2023.11* First Prize, Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM) in Guangdong province
-- *2023.05* Merit Student, Shenzhen MSU-BIT University
-
+- *2023.12* Merit Student, Beijing Institute of Technology
+- *2023-2026* Merit Student, Shenzhen MSU-BIT University
 
 
 # 📖 Educations
