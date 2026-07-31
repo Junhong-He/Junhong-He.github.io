@@ -22,7 +22,7 @@ I am currently a Master's student at [Beijing Institute of Technology](https://w
 My research interests lie at the intersection of **Artificial Intelligence**, **Large Language Model**, and **World Model**. I have published 3 papers as first/co-first author in top-tier journals and conferences including **IEEE JSTAR (JCR Q1)**, **IEEE CloudCom (EI)**, and **IEEE CAC (EI)**.
 
 # 🔥 News
-- *2025.12*: &nbsp;🎉 Our paper on fine-grained 3D building façade reconstruction is accepted by **IEEE JSTAR** (SCI Q1, Second Author).
+- *2025.12*: &nbsp;🎉 Our paper on fine-grained 3D building façade reconstruction is accepted by **IEEE JSTAR** (JCR Q1, Second Author).
 - *2025.10*: &nbsp;🎉 Our paper on dual-objective parallel task scheduling via PPO is accepted by **IEEE CloudCom 2025** (Co-First Author).
 - *2025.10*: &nbsp;🎉 Our paper on automated vegetable pricing using MILP & Simulated Annealing is accepted by **CAC 2025** (First Author).
 
