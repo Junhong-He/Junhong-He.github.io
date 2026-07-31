@@ -98,6 +98,9 @@ $right-sidebar-width-narrow : 0px;
 $right-sidebar-width        : 0px;
 $right-sidebar-width-wide   : 0px;
 
+$sidebar-width              : 200px !default;
+$gutter                    : 1em;
+
 $susy: (
   columns: 12,
   column-width: 120px,

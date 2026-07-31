@@ -27,43 +27,25 @@ I have published papers at top venues including **IEEE JSTAR** (SCI Q1) and **IE
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE JSTAR 2025</div><img src='images/paper_placeholder.png' alt="JSTAR" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Fine-Grained 3D Reconstruction of Urban Building Façades via Window-Driven Semantic Parsing](#)
-
-**Junhong He**, et al.
-
-*IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2025 — **Accepted** (Second Author)*
-
-- SCI Journal Paper (Q1)
-</div>
+<div class="pub-item">
+  <strong>[Fine-Grained 3D Reconstruction of Urban Building Façades via Window-Driven Semantic Parsing](#)</strong><br>
+  <span class="pub-authors">**Junhong He**, et al.</span><br>
+  <span class="pub-venue">*IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTAR), 2025 — **Accepted** (Second Author)*</span>
+  <span class="pub-badge">IEEE JSTAR</span> <span class="pub-badge">SCI Q1</span>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TCC 2025</div><img src='images/paper_placeholder.png' alt="TCC" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Dual-Objective Parallel Task Scheduling in Cloud Computing via PPO](#)
-
-**Junhong He**✱, et al.
-
-*IEEE Transactions on Cloud Computing (TCC), 2025 — **Accepted** (Co-First Author)*
-
-- CCF-A Journal Paper
-</div>
+<div class="pub-item">
+  <strong>[Dual-Objective Parallel Task Scheduling in Cloud Computing via PPO](#)</strong><br>
+  <span class="pub-authors">**Junhong He**✱, et al.</span><br>
+  <span class="pub-venue">*IEEE Transactions on Cloud Computing (TCC), 2025 — **Accepted** (Co-First Author)*</span>
+  <span class="pub-badge">IEEE TCC</span> <span class="pub-badge">CCF-A</span>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CAC 2025</div><img src='images/paper_placeholder.png' alt="CAC" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Automated Vegetable Pricing and Replenishment Using MILP and Simulated Annealing](#)
-
-Junhong He, et al.
-
-*Proceedings of the Chinese Automation Congress (CAC 2025), IEEE (EI Compendex) — **Accepted** (First Author)*
-
-- EI International Conference
-</div>
+<div class="pub-item">
+  <strong>[Automated Vegetable Pricing and Replenishment Using MILP and Simulated Annealing](#)</strong><br>
+  <span class="pub-authors">**Junhong He**, et al.</span><br>
+  <span class="pub-venue">*Proceedings of the Chinese Automation Congress (CAC 2025), IEEE (EI Compendex) — **Accepted** (First Author)*</span>
+  <span class="pub-badge">CAC 2025</span> <span class="pub-badge">EI</span>
 </div>
 
 <!--THE END-->
