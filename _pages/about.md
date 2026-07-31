@@ -28,11 +28,44 @@ My research interests lie at the intersection of **Artificial Intelligence**, **
 
 # 📝 Publications
 
-- **[Fine-Grained 3D Reconstruction of Urban Building Façades via Window-Driven Semantic Parsing](#)**, **Junhong He**, et al., *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2025* — **Accepted** (Second Author) — SCI Journal Paper (Q1)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE JSTAR 2025</div><img src='../images/paper_jstar.png' alt="JSTAR" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- **[Dual-Objective Parallel Task Scheduling in Cloud Computing via PPO](#)**, **Junhong He**✱, et al., *IEEE CloudCom, 2025* — **Accepted** (Co-First Author) — EI International Conference
+[Fine-Grained 3D Reconstruction of Urban Building Façades via Window-Driven Semantic Parsing](#)
 
-- **[Automated Vegetable Pricing and Replenishment Using MILP and Simulated Annealing](#)**, Junhong He, et al., *Proceedings of the Chinese Automation Congress (CAC 2025), IEEE* — **Accepted** (First Author) — EI International Conference
+**Junhong He**, et al.
+
+[**Project**](#) | **SCI Journal Paper (Q1)**
+- *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2025 — Accepted (Second Author)*
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CloudCom 2025</div><img src='../images/paper_cloudcom.png' alt="CloudCom" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Dual-Objective Parallel Task Scheduling in Cloud Computing via PPO](#)
+
+**Junhong He**✱, et al.
+
+[**Project**](#) | **EI International Conference**
+- *IEEE CloudCom, 2025 — Accepted (Co-First Author)*
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAC 2025</div><img src='../images/paper_cac.png' alt="CAC" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Automated Vegetable Pricing and Replenishment Using MILP and Simulated Annealing](#)
+
+Junhong He, et al.
+
+[**Project**](#) | **EI International Conference**
+- *Proceedings of the Chinese Automation Congress (CAC 2025), IEEE — Accepted (First Author)*
+
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - *2024.10* National Scholarship (Top 2% of all undergraduates nationwide)
