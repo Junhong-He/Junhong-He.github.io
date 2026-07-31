@@ -35,7 +35,7 @@ My research interests lie at the intersection of **Artificial Intelligence**, **
 
 **Junhong He**, et al.
 
-[**Project**](#) | **SCI Journal Paper (Q1)**
+[**Project**](#) | **JCR Journal Paper (Q1)**
 - *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2025 — Accepted (Second Author)*
 
 </div>
