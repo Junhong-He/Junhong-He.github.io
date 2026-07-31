@@ -1,0 +1,159 @@
+// Breakpoint 1.6.5
+// Copyright 2012-2014 @thoughtbot, Inc.
+// MIT License
+// https://github.com/thoughtbot/breakpoint
+
+$breakpoint-default-features: (
+  'base-font-size' : 16px,
+  'no-query-fallbacks' : false,
+  'no-query-show-contexts' : false,
+);
+
+@mixin breakpoint-set($key, $value) {
+  $breakpoint-default-features: map-merge($breakpoint-default-features, ($key: $value)) !global;
+}
+
+@function breakpoint-get($key, $features: $breakpoint-default-features) {
+  @if map-has-key($features, $key) {
+    @return map-get($features, $key);
+  }
+  @else {
+    @if map-has-key($breakpoint-default-features, $key) {
+      @return map-get($breakpoint-default-features, $key);
+    }
+    @else {
+      @warn "Breakpoint could not find feature: #{$key}";
+      @return null;
+    }
+  }
+}
+
+$breakpoints: () !default;
+$merge-breakpoints: true !default;
+$responsive: true !default;
+
+@mixin respond-to($name, $no-query: false) {
+  $breakpoint: breakpoint-get($name, $breakpoints);
+  @if $breakpoint { @include breakpoint($breakpoint, $no-query); }
+}
+
+@mixin breakpoint($query, $context: $breakpoint-default-features, $no-query: $breakpoint-get('no-query-fallbacks', $context)) {
+  @if not $responsive or type-of($query) == 'string' and ($query == 'monochrome' or $query == 'no-query') {
+    @content; } @else if type-of($query) == 'number' { $single: breakpoint-build($query, $context); @include media-response($single, $context, $no-query) { @content; } }
+  @else if type-of($query) == 'list' and breakpoint-single-string($query) {
+    $first: nth($query, 1);
+    @if length($query) == 1 { $pair: breakpoint-parse-media($first); }
+    @else { $pair: append(breakpoint-parse-media($first), nth($query, 2)); }
+    @include media-response($pair, $context, $no-query) { @content; } }
+  @else if type-of($query) == 'list' and breakpoint-multi-string-list($query) {
+    $media-query: ();
+    @each $item in $query { $parsed: breakpoint-parse-media($item); $media-query: append($media-query, $parsed, comma); }
+    @if length($media-query) == 1 { @include media-response(nth($media-query, 1), $context, $no-query) { @content; } }
+    @else { @media #{$media-query} { @content; } } }
+  @else if type-of($query) == 'list' and breakpoint-standard-query($query) {
+    $query-print: (); $query-fallback: false;
+    @for $i from 1 through length($query) { $item: nth($query, $i);
+      @if type-of($item) == 'number' { $bp: breakpoint-build($item, $context); $query-print: append($query-print, $bp, comma); }
+      @else if type-of($item) == 'string' { $feature: $item; $value: null; @if $i < length($query) { $next: nth($query, $i + 1); @if type-of($next) != 'string' { $value: $next; } }
+        $parsed-pair: breakpoint-parse-pair($feature, $value); $query-print: append($query-print, $parsed-pair); } }
+    @include media-response($query-print, $context, $no-query) { @content; } }
+}
+
+@function breakpoint-build($value, $context) {
+  $base: breakpoint-get('base-font-size', $context);
+  $unit: unit($value);
+  @if $unit == 'px' or $unit == '' { @return $value; }
+  @elseif $unit == 'em' or $unit == 'rem' { @return ($value / $base) * 1em; }
+  @elseif $unit == '%' { @return ($value / 100%) * 1em; }
+  @else { @warn "Breakpoint could not determine unit for #{$value}"; @return false; }
+}
+
+@function breakpoint-parse-pair($feature, $value) {
+  $parsed: ($feature: ());
+  @if $value { $parsed: ($feature: $value); }
+  @else { $parsed: ($feature); }
+  @return $parsed;
+}
+
+@function breakpoint-parse-media($query) {
+  $type: type-of($query);
+  @if $type == 'string' { $feature: $query; $value: null;
+    @if str-index($query, '(') { $split: breakpoint-string-split($query, '(', ')'); $feature: nth($split, 1); $value: nth($split, 2); }
+    @return breakpoint-parse-pair($feature, $value); }
+  @else if $type == 'map' { @return $query; }
+  @else if $type == 'list' and length($query) == 1 { @return breakpoint-parse-media(nth($query, 1)); }
+  @else if $type == 'list' and length($query) > 1 { $output: ();
+    @each $this-query in $query { $parsed: breakpoint-parse-media($this-query); $output: append($output, $parsed, comma); }
+    @return $output; }
+  @else { @warn "Could not parse query: #{$query}"; @return false; }
+}
+
+@function breakpoint-string-split($string, $start, $end) {
+  $str-start: str-index($string, $start);
+  $str-end: str-index($string, $end);
+  @if $str-start and $str-end {
+    $main-str: str-slice($string, ($str-start + 1), ($str-end - 1));
+    $pre-str: str-slice($string, 0, ($str-start - 1));
+    @return ($pre-str, $main-str); }
+  @else { @return ($string, false); }
+}
+
+@function breakpoint-single-string($query) { @return (length($query) == 1 and type-of(nth($query, 1)) == 'string'); }
+
+@function breakpoint-multi-string-list($query) {
+  $multi: false; @each $item in $query { @if type-of($item) == 'string' { $multi: true; } }
+  @return $multi;
+}
+
+@function breakpoint-standard-query($query) {
+  $standard: false; @each $item in $query { @if type-of($item) == 'number' { $standard: true; } }
+  @return $standard;
+}
+
+@mixin media-response($query, $contexts..., $no-query) {
+  $response-key: breakpoint-make-responses($query, $contexts...);
+  @if not map-has-key($breakpoint-context-count, $response-key) {
+    $breakpoint-context-count: map-merge($breakpoint-context-count, ($response-key: 0)) !global; }
+  $current-count: map-get($breakpoint-context-count, $response-key);
+  $breakpoint-context-count: map-merge($breakpoint-context-count, ($response-key: ($current-count + 1))) !global;
+
+  @if breakpoint-no-query($no-query) and breakpoint-no-query-needed($query, $contexts...) {
+    $breakpoint-no-query-fallbacks: map-merge($breakpoint-no-query-fallbacks, ($response-key: $no-query)) !global;
+    @content; }
+  @else {
+    $query-string: '';
+    @if type-of($query) == 'string' { $query-string: $query; }
+    @else { $query-string: breakpoint-to-string($query); }
+    @media #{$query-string} { @content; } }
+}
+
+$breakpoint-context-count: () !default;
+$breakpoint-no-query-fallbacks: () !default;
+
+@function breakpoint-make-responses($query, $contexts...) {
+  $response-key: '#{$query}';
+  @each $context in $contexts { $response-key: $response-key + '-#{$context}'; }
+  @return $response-key;
+}
+
+@function breakpoint-no-query($value) {
+  @if type-of($value) == 'boolean' { @return $value; }
+  @else if type-of($value) == 'string' { @return true; }
+  @else { @return false; }
+}
+
+@function breakpoint-no-query-needed($query, $contexts...) {
+  @if type-of($query) == 'string' { @return false; }
+  @else { @return true; }
+}
+
+@function breakpoint-to-string($query) {
+  $return: ''; $or: ''; $and: ', ';
+  @each $q in $query {
+    $feature: ''; $value: '';
+    @each $k, $v in $q { $feature: $k; $value: $v; }
+    @if $value { $return: $return + '#{$or}#{$feature}: #{$value}'; }
+    @else { $return: $return + '#{$or}#{$feature}'; }
+    $or: ' and '; }
+  @return $return;
+}

@@ -1,0 +1,19 @@
+/* ==========================================================================
+   NOTICE TEXT BLOCKS
+   ========================================================================== */
+
+@mixin notice($notice-color) {
+  margin: 2em 0 !important; padding: 1em; font-family: $global-font-family;
+  font-size: $type-size-6 !important; text-indent: initial;
+  background-color: mix(#fff, $notice-color, 90%); border-radius: $border-radius;
+  box-shadow: 0 1px 1px rgba($notice-color, 0.25);
+  h4 { margin-top: 0 !important; margin-bottom: 0.75em; }
+  p:last-child { margin-bottom: 0 !important; }
+}
+
+.notice { @include notice($light-gray); }
+.notice--primary { @include notice($primary-color); }
+.notice--info { @include notice($info-color); }
+.notice--warning { @include notice($warning-color); }
+.notice--success { @include notice($success-color); }
+.notice--danger { @include notice($danger-color); }

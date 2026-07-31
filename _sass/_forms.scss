@@ -1,0 +1,16 @@
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+form { margin: 0 0 5px 0; }
+fieldset { margin-bottom: 5px; padding: 0; border-width: 0; }
+label, input, button, select, textarea { vertical-align: baseline; *vertical-align: middle; }
+input, button, select, textarea { box-sizing: border-box; font-family: $sans-serif; }
+label { display: block; margin-bottom: 0.25em; color: $text-color; cursor: pointer; }
+input, textarea, select {
+  display: inline-block; width: 100%; padding: 0.25em; margin-bottom: 0.5em;
+  color: $text-color; background-color: #fff; border: 1px solid mix(#fff, #000, 80%);
+  border-radius: $border-radius; box-shadow: $box-shadow;
+  &:hover { border-color: mix(#fff, $primary-color, 50%); }
+}
+input:focus, textarea:focus { border-color: $primary-color; outline: 0; outline: thin dotted \9; }

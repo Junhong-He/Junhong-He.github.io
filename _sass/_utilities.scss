@@ -1,0 +1,41 @@
+.hidden { display: none; visibility: hidden; }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.cf { clear both; }
+.wrapper { @include container(); }
+
+.align-left { display: block; margin-left: auto; margin-right: auto; @include breakpoint($small) { float: left; margin-right: 1em; } }
+.align-right { display: block; margin-left: auto; margin-right: auto; @include breakpoint($small) { float: right; margin-left: 1em; } }
+.align-center { display: block; margin-left: auto; margin-right: auto; }
+
+.full { @include breakpoint($large){ margin-right: -1 * span(2.5 of 12) !important; } }
+
+.social-icons .fa { color: #000; }
+.social-icons .fa-github, .social-icons .fa-github-alt, .social-icons .fa-github-square { color: $github-color; }
+.social-icons .fa-linkedin, .social-icons .fa-linkedin-square { color: $linkedin-color; }
+.social-icons .fa-twitter, .social-icons .fa-twitter-square { color: $twitter-color; }
+
+.sticky {
+  @include breakpoint($large) { @include clearfix(); position: -webkit-sticky; position: sticky; top: 6em; > * { display: block; } }
+}
+
+.navicon {
+  position: relative; width: $navicon-width; height: $navicon-height;
+  background: #fff; margin: auto; -webkit-transition: 0.3s; transition: 0.3s;
+  &:before, &:after {
+    content: ""; position: absolute; left: 0; width: $navicon-width; height: $navicon-height;
+    background: #fff; -webkit-transition: 0.3s; transition: 0.3s;
+  }
+  &:before { top: (-2 * $navicon-height); }
+  &:after { bottom: (-2 * $navicon-height); }
+}
+
+.close .navicon {
+  background: transparent;
+  &:before, &:after{ -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; top: 0; width: $navicon-width; }
+  &:before{ -webkit-transform: rotate3d(0,0,1,45deg); transform: rotate3d(0,0,1,45deg); }
+  &:after{ -webkit-transform: rotate3d(0,0,1,-45deg); transform: rotate3d(0,0,1,-45deg); }
+}
