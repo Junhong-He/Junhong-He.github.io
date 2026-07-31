@@ -3,7 +3,7 @@
    ========================================================================== */
 
 #main {
-  @include container; @include clearfix; margin-top: 1em;
+  @include clearfix; margin-top: 1em;
   padding-left: 1em; padding-right: 1em;
   animation: intro 0.3s both; animation-delay: 0.35s;
   @include breakpoint($x-large) { max-width: $x-large; }
@@ -11,9 +11,46 @@
 
 .page {
   @include breakpoint($large) {
-    @include span(10 of 12 last); @include prefix(0.5 of 12); @include suffix(0 of 12);
+    float: right;
+    width: calc(100% - #{$sidebar-width} - 2em);
+    padding-left: 2em;
   }
-  .page__inner-wrap { @include full(); .page__content, .page__meta, .page__share { @include full(); } }
+  .page__inner-wrap {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    .page__content,
+    .page__meta,
+    .page__share {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+/* Publications list (text-only) */
+.pub-item {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid $border-color;
+
+  strong { font-size: 1.05em; line-height: 1.4; display: inline-block; }
+  .pub-authors { color: $text-color; }
+  .pub-venue { color: $gray; font-style: italic; font-size: 0.95em; }
+}
+
+.pub-badge {
+  display: inline-block;
+  margin: 0.25em 0.25em 0 0;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #fff;
+  background: $info-color;
+  border-radius: 3px;
 }
 
 .page__title { margin-top: 0; line-height: 1; & + .page__meta { margin-top: -0.5em; } }

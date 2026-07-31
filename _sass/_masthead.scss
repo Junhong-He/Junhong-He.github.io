@@ -9,7 +9,7 @@
   -webkit-animation-delay: 0.15s; animation-delay: 0.15s; z-index: 20;
 
   &__inner-wrap {
-    @include container; @include clearfix; padding: .5em; font-family: $sans-serif-narrow;
+    @include clearfix; padding: .5em; font-family: $sans-serif-narrow;
     @include breakpoint($x-large) { max-width: $x-large; }
     nav { z-index: 10; }
     a { text-decoration: none; }
