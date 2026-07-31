@@ -19,7 +19,7 @@ redirect_from:
 
 I am currently a Master's student at [Beijing Institute of Technology](https://www.bit.edu.cn/), supervised by Prof. [Yan Yan](http://mc.bit.edu.cn/szdw/qzjs/yanyan/index.htm). I received my B.E. degree from [Shenzhen MSU-BIT University](https://www.smbu.edu.cn/) in 2026.
 
-My research interests lie at the intersection of **Artificial Intelligence**, **Large Language Model**, and **World Model**. I have published 3 papers as first/co-first author in top-tier journals and conferences including **IEEE JSTAR (SCI Q1)**, **IEEE CloudCom (EI)**, and **IEEE CAC (EI)**.
+My research interests lie at the intersection of **Artificial Intelligence**, **Large Language Model**, and **World Model**. I have published 3 papers as first/co-first author in top-tier journals and conferences including **IEEE JSTAR (JCR Q1)**, **IEEE CloudCom (EI)**, and **IEEE CAC (EI)**.
 
 # 🔥 News
 - *2025.12*: &nbsp;🎉 Our paper on fine-grained 3D building façade reconstruction is accepted by **IEEE JSTAR** (SCI Q1, Second Author).
