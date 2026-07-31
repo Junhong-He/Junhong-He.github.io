@@ -76,8 +76,8 @@ Junhong He, et al.
 
 
 # 📖 Educations
-- *2026.09 - Present (now)*, M.S., School of Computer Science, [Beijing Institute of Technology](https://www.bit.edu.cn/), Beijing, China.
-- *2022.09 - 2026.06*, B.E., [Shenzhen MSU-BIT University](https://www.smbu.edu.cn/), Shenzhen, China. (GPA: 3.93(3/179), Outstanding Graduate)
+- *2026.09 - Present (now)*, M.S., major in Intelligent Science and Technology, [Beijing Institute of Technology](https://www.bit.edu.cn/), Beijing, China.
+- *2022.09 - 2026.06*, B.E.,major in Electronic and Computer Engineering, [Shenzhen MSU-BIT University](https://www.smbu.edu.cn/), Shenzhen, China. (GPA: 3.93(3/179), Outstanding Graduate)
 - *2023.01 - 2023.06*, Exchange Student, [Beijing Institute of Technology](https://www.bit.edu.cn/), Beijing, China.
 
 # 🔬 Research Experience
